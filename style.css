@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+root {
+  /* CSS HEX */
+  --slate-gray: #7e8e9eff;
+  --silver: #abababff;
+  --platinum: #e1e1e2ff;
+  --slate-gray-2: #6e859aff;
+  --white-smoke: #f3f3f3ff;
+  --gray: #d7d7d7;
+  --light-grau: #e4e4e4;
+  --blue:#CAD3D2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  min-height: 500px;
+  height: 80vh;
+  width: 100%;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font: 16px;
+  background-color: gray;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.card {
+  width: 550px;
+  background-color: #fff;
+}
+.main-container {
+  padding: 10px;
+}
+
+.love-header {
+  padding: 15px 10px 5px 10px;
+  color: gray;
+  background-color: #e4e4e4;
+}
+.love-header h1 {
+  padding: 6px 0;
+  line-height: 8px;
+  letter-spacing: -1px;
+}
+.love-header h3 {
+  color: gray;
+  padding: 10px 0;
+  letter-spacing: -0px;
+}
+.banner {
+  background-image: linear-gradient(
+      rgba(121, 119, 119, 0.5),
+      rgba(136, 134, 134, 0.5)
+    ),
+    url('./images/neocard.png');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  color: white;
+}
+.banner-info h1 {
+  width: max(20vw, 50px);
+  
+}
+.banner-info p {
+  width: 15vw;
+}
+.banner h1 {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.banner p {
+  position: relative;
+  top: 40px;
+  left: 10px;
+}
+.navigation-links {
+  border-top: 1px solid rgb(167, 167, 167);
+}
+.navigation-links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 25px 0 20px 0;
+  color: rgb(128, 125, 125);
+}
+
+.navigation-links li {
+  border: 1px solid rgb(128, 125, 125);
+  background-color: var(--blue);
+  padding: 5px 25px;
+  border-radius: 8px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  color: black;
+}
+/* 
+.navigation-links li:hover{
+ 
+} */
+
+.box {
+  background-color: #e4e4e4;
+}
+
+.box h2 {
+  color: rgb(78, 77, 77);
+}
+
+.box p {
+  color: rgb(128, 125, 125);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 5px 10px;
+  grid-auto-rows: minmax(80px, auto);
+}
+
+.grid-container p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.right-div {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+/* .right-div img { */
+.right-image {
+  background-image: linear-gradient(
+      rgba(197, 195, 195, 0.5),
+      rgba(177, 174, 174, 0.5)
+    ),
+    url('./images/neocard.png');
+  width: 100%;
+  height: 60%;
+  background-position: 5% 90%;
+}
+
+.right-text {
+  margin: 5px;
+}
+
+.left-div {
+  grid-column: 3/5;
+  grid-row: 1;
+  padding: 6px;
+}
+
+.left-div p {
+  border-bottom: 1.8px solid rgb(136, 173, 221);
+  padding: 4px 0;
+}
+
+.left-div p:last-child {
+  border-bottom: none;
+}
+.bottom-div {
+  grid-column: 2/5;
+  grid-row: 2/3;
+  padding: 5px;
+}
+
+.highlight {
+  color: rgb(136, 173, 221);
+  font-weight: 500;
+}
